@@ -5,6 +5,8 @@ export default ({min, max}) => {
   let numberBetweenMinMax = Math.random() * (max - min) + min;
 
   return (
-    <Text>O número entre os valores fornecidos é: {numberBetweenMinMax}</Text>
+    <Text>
+      O número entre os valores fornecidos é: {Math.ceil(numberBetweenMinMax)}
+    </Text>
   );
 };

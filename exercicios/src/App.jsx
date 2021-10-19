@@ -3,6 +3,7 @@ import {SafeAreaView, StyleSheet, TextInput} from 'react-native';
 // import Primeiro from './components/Primeiro';
 import MinMax from './components/MinMax';
 import Aleatorio from './components/Aleatorio';
+import Botao from './components/Botao';
 
 export default () => {
   const [min, setMin] = useState(null);
@@ -10,23 +11,7 @@ export default () => {
 
   return (
     <SafeAreaView style={style.App}>
-      {/* <Text style={style.Text}>Primeiro Componente</Text>
-      <Primeiro /> */}
-      <TextInput
-        onChangeText={setMin}
-        keyboardType="numeric"
-        placeholder="Número mínimo"
-        value={min}
-      />
-      <TextInput
-        onChangeText={setMax}
-        keyboardType="numeric"
-        placeholder="Número máximo"
-        value={max}
-      />
-
-      {max > min && min != null && <Aleatorio min={min} max={max} />}
-
+      <Botao />
       {/* <MinMax min={3} max={4} /> */}
     </SafeAreaView>
   );
