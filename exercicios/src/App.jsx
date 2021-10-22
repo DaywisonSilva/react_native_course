@@ -4,6 +4,7 @@ import {SafeAreaView, StyleSheet, TextInput} from 'react-native';
 import MinMax from './components/MinMax';
 import Aleatorio from './components/Aleatorio';
 import Botao from './components/Botao';
+import Contador from './components/Contador';
 
 export default () => {
   const [min, setMin] = useState(null);
@@ -11,7 +12,8 @@ export default () => {
 
   return (
     <SafeAreaView style={style.App}>
-      <Botao />
+      <Contador inicial={0} passo={10} />
+      {/* <Botao /> */}
       {/* <MinMax min={3} max={4} /> */}
     </SafeAreaView>
   );
