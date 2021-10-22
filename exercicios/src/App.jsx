@@ -5,6 +5,8 @@ import MinMax from './components/MinMax';
 import Aleatorio from './components/Aleatorio';
 import Botao from './components/Botao';
 import Contador from './components/Contador';
+import Pai1 from './components/direta/Pai';
+import Pai2 from './components/indireta/Pai';
 
 export default () => {
   const [min, setMin] = useState(null);
@@ -12,7 +14,9 @@ export default () => {
 
   return (
     <SafeAreaView style={style.App}>
-      <Contador inicial={0} passo={10} />
+      {/* <Contador inicial={0} passo={10} /> */}
+      {/* <Pai1 /> */}
+      <Pai2 />
       {/* <Botao /> */}
       {/* <MinMax min={3} max={4} /> */}
     </SafeAreaView>
